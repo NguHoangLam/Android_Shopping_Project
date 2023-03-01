@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Project</string>
+    <string name="login">Đăng Nhập</string>
+    <string name="signUp">Đăng Ký</string>
+    <string name="newCartAdded">Đã Thêm Vào Giỏ</string>
+    <string name="AllFieldsRequired">Tất cả Field là bắt buộc</string>
+    <string name="repasswordError">Mật Khẩu Và Nhập lại Mật khẩu Phải Giống Nhau</string>
+    <string name="createAccountSuccessful">Tạo Tài Khoản Thành Công</string>
+    <string name="createAccountUnSuccessful">Tạo Tài Khoản Không Thành Công</string>
+    <string name="accountExisted">Tài Khoản Tồn Tại</string>
+</resources>

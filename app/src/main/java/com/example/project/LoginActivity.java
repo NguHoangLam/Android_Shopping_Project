@@ -29,8 +29,8 @@ public class LoginActivity extends AppCompatActivity {
         tab_layout = findViewById(R.id.tab_layout);
         view_pager = findViewById(R.id.view_pager);
 
-        tab_layout.addTab(tab_layout.newTab().setText("Login"));
-        tab_layout.addTab(tab_layout.newTab().setText("Signup"));
+        tab_layout.addTab(tab_layout.newTab().setText(getString(R.string.login)));
+        tab_layout.addTab(tab_layout.newTab().setText(getString(R.string.signUp)));
         tab_layout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         LoginAdapter adapter = new LoginAdapter(getSupportFragmentManager(),this,tab_layout.getTabCount());

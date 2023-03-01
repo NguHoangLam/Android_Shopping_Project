@@ -53,7 +53,7 @@ public class DetailProduct extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 db.addCart(currentAccount.getId(),currentProduct.getId());
-                Toast.makeText(DetailProduct.this,"NEW CART ADDED",Toast.LENGTH_SHORT).show();
+                Toast.makeText(DetailProduct.this,getString(R.string.newCartAdded),Toast.LENGTH_SHORT).show();
             }
         });
         btn_goToCart.setOnClickListener(new View.OnClickListener() {

@@ -41,21 +41,21 @@ public class SignUpTabFragment extends Fragment {
                 String phone = edit_phone.getText().toString();
 
                 if (TextUtils.isEmpty(user)|| TextUtils.isEmpty(pass)||TextUtils.isEmpty(repass)||TextUtils.isEmpty(phone)){
-                    tv_error.setText("All fields Required");
+                    tv_error.setText(getString(R.string.AllFieldsRequired));
 
                 }else if (!pass.equals(repass)) {
 
-                    tv_error.setText("password and repassword must be the same!");
+                    tv_error.setText(getString(R.string.repasswordError));
                 }else if (DB.checkUsername(user)){
 
-                    tv_error.setText("Account Existed");
+                    tv_error.setText(getString(R.string.accountExisted));
                 }else{
                     Boolean insert = DB.insertAccountData(user,phone, pass);
                     if (insert) {
                         tv_error.setTextColor(Color.rgb(255, 0, 0));
-                        tv_error.setText("Create Account Successful!");
+                        tv_error.setText(getString(R.string.createAccountSuccessful));
                     }else{
-                        tv_error.setText("Create Account Unsuccessfully!");
+                        tv_error.setText(getString(R.string.createAccountUnSuccessful));
                     }
 
                 }

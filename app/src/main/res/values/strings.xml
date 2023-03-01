@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Project</string>
+
+    <string name="login">Login</string>
+
+    <string name="signUp">SignUp</string>
+
+    <string name="newCartAdded">NEW CART ADDED</string>
+
+    <string name="AllFieldsRequired">All fields Required</string>
+
+    <string name="repasswordError">password and repassword must be the same!</string>
+
+    <string name="accountExisted">Account Existed</string>
+
+    <string name="createAccountSuccessful">Create Account Successful!</string>
+
+    <string name="createAccountUnSuccessful">Create Account Unsuccessfully!</string>
 </resources>
